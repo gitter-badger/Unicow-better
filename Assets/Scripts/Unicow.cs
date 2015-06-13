@@ -22,8 +22,8 @@ public class Unicow : MonoBehaviour
     {
         transform.position = respawnPosition.position;
         transform.rotation = respawnPosition.rotation;
-        rigidbody.velocity = Vector3.zero;
-        rigidbody.angularVelocity = Vector3.zero;
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
     }
 
     // Update is called once per frame
